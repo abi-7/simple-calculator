@@ -25,3 +25,25 @@ function calculate() {
     display.value = "Error";
   }
 }
+
+/* 
+function calculates the percentage of the equation/number in the display
+*/
+function calculatePercent() {
+  try {
+    display.value = (eval(display.value)) / 100;
+  } catch (error) {
+    display.value = "Error";
+  }
+}
+
+/* 
+function deletes the last number/operator that was appended to the display
+*/
+function deleteLast() {
+  let input = display.value;
+  
+  //delete/remove from expression
+  display.value = input.replace(/.$/, "");
+}
+
