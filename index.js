@@ -38,6 +38,15 @@ function calculatePercent() {
 }
 
 /* 
+function toggles the number to be negative or positive
+*/
+function toggleSign() {
+  let num = display.value;
+
+  display.value = -num;
+}
+
+/* 
 function deletes the last number/operator that was appended to the display
 */
 function deleteLast() {
